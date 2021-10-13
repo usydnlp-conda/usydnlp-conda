@@ -79,7 +79,7 @@ python app.py
 
 ## References
 
-- [monologg/JointBERT] (https://github.com/monologg/JointBERT)
+- [monologg/JointBERT](https://github.com/monologg/JointBERT)
 - [avinassh/pytorch-flask-api-heroku](https://github.com/avinassh/pytorch-flask-api-heroku)
 - [Huggingface Transformers](https://github.com/huggingface/transformers)
 - [pytorch-crf](https://github.com/kmkurn/pytorch-crf)
