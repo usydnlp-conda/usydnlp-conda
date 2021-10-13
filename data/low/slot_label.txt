@@ -1,0 +1,8 @@
+PAD
+UNK
+C
+L
+O
+P
+S
+T
