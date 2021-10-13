@@ -1,6 +1,6 @@
 # MAC, BERT & DAD: Multi-Aspect Cross-Attention, Joint-Bert and Dual-Annotated Datasets for In-Game Toxicity Detection
 
-### Sony Jufri
+## Sony Jufri
 
 <b>Abstract:</b> In the past few years, the popularity of online social media and multi-player gaming communities had grown rapidly. Unfortunately, with this phenomenon, came along the emergence of harmful behaviour in these communities. A study by Amnesty International (2017) found that 7.1% of tweets (which amounted to 1.1 million tweets or one every 30 seconds) that were sent to the women in the study, were abusive. Women of colour in particular, were the more likely target (34%). Another study by the Australian Government’s eSafety Commissioner (2021) reported that 17% of young Australians (i.e., more than 200,000 people) that played online games, had experienced some forms of bullying or abuse. 
 
