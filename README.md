@@ -1,3 +1,13 @@
+MAC, BERT & DAD: Multi-Aspect Cross-Attention, Joint-Bert and Dual-Annotated Datasets for In-Game Toxicity Detection
+
+Sony Jufri
+
+Abstract: In the past few years, the popularity of online social media and multi-player gaming communities had grown rapidly. Unfortunately, with this phenomenon, came along the emergence of harmful behaviour in these communities. A study by Amnesty International (2017) found that 7.1% of tweets (which amounted to 1.1 million tweets or one every 30 seconds) that were sent to the women in the study, were abusive. Women of colour in particular, were the more likely target (34%). Another study by the Australian Government’s eSafety Commissioner (2021) reported that 17% of young Australians (i.e., more than 200,000 people) that played online games, had experienced some forms of bullying or abuse. 
+
+Many attempts had been done by social media companies and Natural Language Processing (NLP) researchers to detect online abuse. These attempts ranged from the simple use of human reviewers to the more sophisticated machine learning and deep learning techniques. Nevertheless, the above studies showed how online abuse remained a big issue for many people to this day. Therefore, it was important that we remained vigilant and continued to improve our effort in detecting online abuse. 
+
+Inspired by the methods discussed in two of the most recent literatures in abusive language detection from the University of Sydney's NLP Group, we aimed to develop a deep learning model that could better detect toxic behaviour in online gaming. Using data from two well-known games, Defense of the Ancients 2 (Dota 2) and League of Legends (LOL), a variety of Joint-BERT models would be used and further improved to better detect toxic behaviour in these games. We hoped that this study would benefit not only online gamers out there, but also other stakeholders in the gaming industry.
+
 # JointBERT
 
 (Unofficial) Pytorch implementation of `JointBERT`: [BERT for Joint Intent Classification and Slot Filling](https://arxiv.org/abs/1902.10909)
@@ -34,7 +44,7 @@
 ## Training & Evaluation
 
 ```bash
-$ python3 main.py --task {task_name} \
+$ python main.py --task {task_name} \
                   --model_type {model_type} \
                   --model_dir {model_dir_name} \
                   --do_train --do_eval \
@@ -56,10 +66,6 @@ python main.py --task low --model_type distilbert --model_dir final_low_distilbe
 
 python main.py --task low --model_type distilbert --model_dir final_low_distilbert_de_model --do_train --do_eval --add_embed de --optim_metric U-F1(I)
 
-# for APP
-set FLASK_ENV=development
-python app.py
-
 # For testing code
 python main.py --task conda --model_type bert --model_dir conda_testing_model --do_train --num_train_epochs 1
 
@@ -74,18 +80,13 @@ $ python predict.py --input_file {INPUT_FILE_PATH} --output_file {OUTPUT_FILE_PA
 # Example
 python predict.py --input_file sample_pred_in.txt --output_file sample_pred_out.txt --model_dir final_conda_bert_dg_model
 
-## Updates
-
-- 2019/12/03: Add DistilBert and RoBERTa result
-- 2019/12/14: Add Albert (large v1) result
-- 2019/12/22: Available to predict sentences
-- 2019/12/26: Add Albert (xxlarge v1) result
-- 2019/12/29: Add CRF option
-- 2019/12/30: Available to check `sentence-level semantic frame accuracy`
-- 2020/01/23: Only show the result related with uncased model
-- 2020/04/03: Update with new prediction code
+# for APP
+set FLASK_ENV=development
+python app.py
 
 ## References
 
+- The base code for the Joint-BERT models were sourced from the monologg GitHub page: https://github.com/monologg/JointBERT
+- The app was developed using PyTorch Flask API. The code was adopted from avinassh GitHub website: https://github.com/avinassh/pytorch-flask-api-heroku
 - [Huggingface Transformers](https://github.com/huggingface/transformers)
 - [pytorch-crf](https://github.com/kmkurn/pytorch-crf)
