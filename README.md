@@ -10,9 +10,9 @@ Inspired by two of the most recent literatures in abusive language detection fro
 
 ## JointBERT
 
-(Unofficial) Pytorch implementation of `JointBERT`: [BERT for Joint Intent Classification and Slot Filling](https://arxiv.org/abs/1902.10909)
+The Base Joint-BERT model used the (Unofficial) Pytorch implementation of `JointBERT`: [BERT for Joint Intent Classification and Slot Filling](https://arxiv.org/abs/1902.10909)
 
-## Model Architecture
+## The Base Joint-BERT Model Architecture
 
 <p float="left" align="center">
     <img width="600" src="https://user-images.githubusercontent.com/28896432/68875755-b2f92900-0746-11ea-8819-401d60e4185f.png" />  
@@ -25,7 +25,7 @@ Inspired by two of the most recent literatures in abusive language detection fro
 ## Dependencies
 
 - python>=3.6
-- torch==1.6.0
+- torch==1.8.1
 - transformers==3.0.2
 - seqeval==0.0.12
 - pytorch-crf==0.7.2
