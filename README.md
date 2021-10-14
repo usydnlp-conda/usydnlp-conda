@@ -74,7 +74,7 @@ $ python predict.py --input_file {INPUT_FILE_PATH} --output_file {OUTPUT_FILE_PA
 python predict.py --input_file sample_pred_in.txt --output_file sample_pred_out.txt --model_dir final_conda_bert_dg_model
 
 ## Deployment using Flask API
-set FLASK_ENV=development
+set FLASK_ENV=development  \
 python app.py
 
 ## References
