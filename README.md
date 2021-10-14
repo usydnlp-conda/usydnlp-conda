@@ -2,8 +2,6 @@
 
 ## Sony Jufri
 
-## University of Sydney's NLP Group
-
 <b>Abstract:</b> In the past few years, the popularity of online multi-player gaming communities had grown rapidly. Unfortunately, with this phenomenon, came along the emergence of harmful behaviour in these communities. Many attempts had been done by gaming companies and Natural Language Processing (NLP) researchers to detect online abuse. These attempts ranged from the simple use of human reviewers to the more sophisticated machine learning and deep learning techniques. Nevertheless, recent studies showed that online abuse remained a big issue for many people. It is important that we remain vigilant and continue to improve our effort in detecting online abuse. 
 
 Inspired by two of the most recent literatures in abusive language detection from the University of Sydney's NLP Group, we developed a deep learning model that could better detect toxic behaviour in online gaming. Using data from two well-known games, Defense of the Ancients 2 (Dota 2) and League of Legends (LOL), a variety of Joint-BERT models would be used and further improved to better detect toxic behaviour in these games.
