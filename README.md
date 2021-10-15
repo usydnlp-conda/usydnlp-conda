@@ -1,4 +1,4 @@
-# MAC, BERT & DAD: Multi-Aspect Cross-Attention, Joint-Bert and Dual-Annotated Datasets for In-Game Toxicity Detection
+# J-BERT & DAD: Joint-Bert and Dual-Annotated Datasets for In-Game Toxicity Detection
 
 ## Sony Jufri
 
