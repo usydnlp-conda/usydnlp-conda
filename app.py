@@ -2,20 +2,15 @@ import os
 
 from flask import Flask, render_template, request, redirect
 
-from inference import get_prediction
-from commons import format_class_name
-import predict
-
-import os
 import logging
-import argparse
-from tqdm import tqdm, trange
+#import argparse
+from tqdm import tqdm #, trange
 
 import numpy as np
 import torch
 from torch.utils.data import TensorDataset, DataLoader, SequentialSampler
 
-from utils import init_logger, load_tokenizer, get_intent_labels, get_slot_labels, MODEL_CLASSES
+from utils import load_tokenizer, get_intent_labels, get_slot_labels, MODEL_CLASSES #, init_logger
 logger = logging.getLogger(__name__)
 
 

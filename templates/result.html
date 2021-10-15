@@ -18,7 +18,7 @@
     </style>
     <link rel="stylesheet" href="/static/style.css">
 
-    <title>Image Prediction using PyTorch</title>
+    <title>Joint-Bert and Dual-Annotated Datasets for In-Game Toxicity Detection</title>
   </head>
   <body class="text-center">
     <form class="form-signin" method=post enctype=multipart/form-data>
@@ -26,7 +26,7 @@
         <h1 class="h3 mb-3 font-weight-normal"><strong>Prediction</strong></h1>
         <h4 class="h4 mb-3 font-weight-normal">Intent: {{ class_name }}</h4>
         <h5 class="h5 mb-3 font-weight-normal">Slot: {{ class_id }}</h5>
-        <p>Slot labels: T (Toxicity), C (Character), D/L (Dota/LOL-specific), S (game Slang), P (Pronoun)</p>
+        <p><b>Slot labels:</b> T (Toxicity), C (Character), D/L (Dota/LOL-specific), S (game Slang), P (Pronoun)</p>
         <a href="http://127.0.0.1:5000/"><img src="/static/theo.png"></a>
         <h5 class="h5 mb-3 font-weight-normal"><a href="http://127.0.0.1:5000/">Make another prediction?</a></h5>
         <p class="mt-5 mb-3 text-muted">Built using Pytorch, Flask and Love</p>
