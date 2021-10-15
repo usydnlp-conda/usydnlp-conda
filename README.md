@@ -6,7 +6,7 @@
 
 Inspired by two of the most recent literatures in abusive language detection from the University of Sydney's NLP Group, we developed some deep learning models that could better detect toxic behaviour in online gaming. Using data from two well-known games, Defense of the Ancients 2 (Dota 2) and League of Legends (LOL), a variety of Joint-BERT models would be used and further improved to better detect toxic behaviour in these games.
 
-## JointBERT
+## Joint-BERT
 
 The Base Joint-BERT model used the (Unofficial) Pytorch implementation of `JointBERT`: [BERT for Joint Intent Classification and Slot Filling](https://arxiv.org/abs/1902.10909)
 
