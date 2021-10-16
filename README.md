@@ -87,10 +87,11 @@ python predict.py --input_file sample_pred_in.txt --output_file sample_pred_out.
 
 ## Deployment using Flask API
 Local deployment:
-- set FLASK_ENV=development  \
-- python app.py
+set FLASK_ENV=development  
+python app.py
 
-Heroku deployment: [BERT & DAD Heroku](https://usydnlp-conda.herokuapp.com/)
+Heroku deployment: [BERT & DAD Heroku](https://usydnlp-conda.herokuapp.com/)  
+
 Google Cloud deployment: [BERT & DAD Gcloud](https://usydnlp-conda-dtupb6paeq-ue.a.run.app/)
 
 ## References
