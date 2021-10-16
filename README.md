@@ -6,9 +6,9 @@
 
 <b>Abstract:</b> In the past few years, the popularity of online multi-player gaming communities had grown rapidly. Unfortunately, with this phenomenon, came along the emergence of harmful behaviour in these communities. Many attempts had been done by gaming companies and Natural Language Processing (NLP) researchers to detect online abuse. These attempts ranged from the simple use of human reviewers to the more sophisticated machine learning and deep learning techniques. Nevertheless, recent studies showed that online abuse remained a big issue for many people. It is important that we remain vigilant and continue to improve our effort in detecting online abuse. 
 
-Inspired by two of the most recent literatures in abusive language detection from the University of Sydney's NLP Group, we developed a deep learning model that could better detect toxic behaviour in online gaming. Using data from two well-known games, Defense of the Ancients 2 (Dota 2) and League of Legends (LOL), a variety of Joint-BERT models would be used and further improved to better detect toxic behaviour in these games.
+Inspired by two of the most recent literatures in abusive language detection from the University of Sydney's NLP Group, we developed a deep learning model that could better detect toxic behaviour in online gaming. Using data from two well-known games, Defense of the Ancients 2 (Dota 2) and League of Legends (LOL), a variety of Joint-BERT models were used and further improved to better detect toxic behaviour in these games.
 
-## JointBERT
+## Joint-BERT
 
 The Base Joint-BERT model used the (Unofficial) Pytorch implementation of `JointBERT`: [BERT for Joint Intent Classification and Slot Filling](https://arxiv.org/abs/1902.10909)
 
@@ -20,7 +20,6 @@ The Base Joint-BERT model used the (Unofficial) Pytorch implementation of `Joint
 
 - Predict `intent` and `slot` at the same time from **one BERT model** (=Joint model)
 - total_loss = intent_loss + coef \* slot_loss (Change coef with `--slot_loss_coef` option)
-- **If you want to use CRF layer, give `--use_crf` option**
 
 ## CONDA
 
@@ -87,8 +86,12 @@ $ python predict.py --input_file {INPUT_FILE_PATH} --output_file {OUTPUT_FILE_PA
 python predict.py --input_file sample_pred_in.txt --output_file sample_pred_out.txt --model_dir final_conda_bert_dg_model
 
 ## Deployment using Flask API
-set FLASK_ENV=development  \
-python app.py
+Local deployment:
+- set FLASK_ENV=development  \
+- python app.py
+
+Heroku deployment: [BERT & DAD Heroku](https://usydnlp-conda.herokuapp.com/)
+Google Cloud deployment: [BERT & DAD Gcloud](https://usydnlp-conda-dtupb6paeq-ue.a.run.app/)
 
 ## References
 
