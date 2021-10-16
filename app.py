@@ -363,13 +363,13 @@ def predict(sent,model_name):
             else:
                 line = line + "[{}:{}] ".format(word, pred)
         if intent_label_lst[intent_pred]=='E':
-            final_intent_pred = 'Explicit'
+            final_intent_pred = 'Toxic (Explicit)'
         elif intent_label_lst[intent_pred]=='I':
-            final_intent_pred = 'Implicit'
+            final_intent_pred = 'Toxic (Implicit)'
         elif intent_label_lst[intent_pred]=='A':
-            final_intent_pred = 'Action'
+            final_intent_pred = 'Non-toxic (Action)'
         else:
-            final_intent_pred = 'Other'
+            final_intent_pred = 'Non-toxic (Other)'
         print("Intent prediction: {}".format(final_intent_pred))
         print("Slot prediction: {}".format(line))
 
