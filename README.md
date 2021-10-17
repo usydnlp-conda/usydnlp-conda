@@ -81,11 +81,7 @@ $ python predict.py --input_file {INPUT_FILE_PATH} --output_file {OUTPUT_FILE_PA
 ### Example
 python predict.py --input_file sample_pred_in.txt --output_file sample_pred_out.txt --model_dir final_conda_bert_dg_model
 
-## Deployment using Flask API
-Local deployment:  
-set FLASK_ENV=development  
-python app.py
-
+## Model Demo
 Heroku deployment: [BERT & DAD on Heroku](https://usydnlp-conda.herokuapp.com/)  
 
 Google Cloud deployment: [BERT & DAD on Google Cloud](https://usydnlp-conda-dtupb6paeq-ue.a.run.app/)
