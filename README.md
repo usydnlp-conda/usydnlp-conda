@@ -1,16 +1,24 @@
-# J-BERT & DAD: Joint-BERT and Dual-Annotated Datasets for In-Game Toxicity Detection
+# MAE, BERT & DAD: Multi-Aspect Embeddings, Joint-BERT and Dual-Annotated Datasets for In-Game Toxicity Detection
 
 ## Sony Jufri
 
-<b>Abstract:</b> In the past few years, the popularity of online multi-player gaming communities had grown rapidly. Unfortunately, with this phenomenon, came along the emergence of harmful behaviour in these communities. Many attempts had been done by gaming companies and Natural Language Processing (NLP) researchers to detect online abuse. These attempts ranged from the simple use of human reviewers to the more sophisticated machine learning and deep learning techniques. Nevertheless, recent studies showed that online abuse remained a big issue for many people. It is important that we remain vigilant and continue to improve our effort in detecting online abuse. 
+<b>Abstract:</b> In the past few years, the popularity of online multi-player gaming had grown rapidly. Unfortunately, with this phenomenon, came along the emergence of harmful behaviour in the gaming communities. Many attempts had been done by gaming companies and Natural Language Processing (NLP) researchers to detect online abuse. These attempts ranged from the simple use of human reviewers to the more sophisticated machine learning and deep learning techniques. Nevertheless, studies showed that online abuse remained a big issue for many people to this day. Therefore, it is important that we remain vigilant and continue to improve our effort in detecting online abuse. 
 
-Inspired by two of the most recent literatures in abusive language detection from the University of Sydney's NLP Group, we developed a deep learning model that could better detect toxic behaviour in online gaming. Using data from two well-known games, Defense of the Ancients 2 (Dota 2) and League of Legends (LOL), a variety of Joint-BERT models were used and further improved to better detect toxic behaviour in these games.
+Inspired by two of the most recent literatures in abusive language detection from the University of Sydney's NLP Group, we developed some deep learning models that could better detect toxic behaviour in online gaming. Using data from two well-known games, Defense of the Ancients 2 (Dota 2) and League of Legends (LOL), dual annottated datasets, together with a variety of multi-apsect embeddings and Joint-BERT models were used and further improved to better detect toxic behaviour in these games.
 
-## Joint-BERT
+## MAE
+
+The Multi-Aspect Embeddings were developed using the method outlined in [Detect All Abuse! Toward Universal Abusive Language Detection Models](https://github.com/usydnlp/MACAS).
+
+<p align="center">
+  <img width="600" src="/static/MAE.png">
+</p>
+
+## BERT
 
 The Base Joint-BERT model used the (Unofficial) Pytorch implementation of `JointBERT`: [BERT for Joint Intent Classification and Slot Filling](https://arxiv.org/abs/1902.10909)
 
-## The Base Joint-BERT Model Architecture
+### The Base Joint-BERT Model Architecture
 
 <p float="left" align="center">
     <img width="600" src="https://user-images.githubusercontent.com/28896432/68875755-b2f92900-0746-11ea-8819-401d60e4185f.png" />  
@@ -19,7 +27,7 @@ The Base Joint-BERT model used the (Unofficial) Pytorch implementation of `Joint
 - Predict `intent` and `slot` at the same time from **one BERT model** (=Joint model)
 - total_loss = intent_loss + coef \* slot_loss (Change coef with `--slot_loss_coef` option)
 
-## CONDA
+## DAD
 
 The CONDA and LOL datasets were developed using the method outlined in [CONDA: a CONtextual Dual-Annotated dataset for in-game toxicity understanding and detection](https://arxiv.org/abs/2106.06213) and provided by the University of Sydney's NLP Group. Below is an example of the intent/slot annotation from the paper.
 
