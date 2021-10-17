@@ -8,15 +8,15 @@ Inspired by two of the most recent literatures in abusive language detection fro
 
 ## MAE
 
-The Multi-Aspect Embeddings were developed using the method outlined in [Detect All Abuse! Toward Universal Abusive Language Detection Models](https://github.com/usydnlp/MACAS).
+The multi-aspect embeddings were developed using the method outlined in [Detect All Abuse! Toward Universal Abusive Language Detection Models](https://github.com/usydnlp/MACAS).
 
 <p align="center">
-  <img width="230" src="/static/MAE.png">
+  <img width="220" src="/static/MAE.png">
 </p>
 
 ## BERT
 
-The Base Joint-BERT model used the (Unofficial) Pytorch implementation of `JointBERT`: [BERT for Joint Intent Classification and Slot Filling](https://arxiv.org/abs/1902.10909)
+The Joint-BERT model were developed using the (Unofficial) Pytorch implementation of `JointBERT`: [BERT for Joint Intent Classification and Slot Filling](https://arxiv.org/abs/1902.10909) as the base.
 
 ### The Base Joint-BERT Model Architecture
 
@@ -29,7 +29,7 @@ The Base Joint-BERT model used the (Unofficial) Pytorch implementation of `Joint
 
 ## DAD
 
-The CONDA and LOL datasets were developed using the method outlined in [CONDA: a CONtextual Dual-Annotated dataset for in-game toxicity understanding and detection](https://arxiv.org/abs/2106.06213) and provided by the University of Sydney's NLP Group. Below is an example of the intent/slot annotation from the paper.
+The CONDA and LOL dual-annotated datasets were developed using the method outlined in [CONDA: a CONtextual Dual-Annotated dataset for in-game toxicity understanding and detection](https://arxiv.org/abs/2106.06213) and provided by the University of Sydney's NLP Group. Below is an example of the intent/slot annotation from the paper.
 
 <p align="center">
   <img width="450" src="/static/conda.png">
@@ -91,6 +91,7 @@ Google Cloud deployment: [BERT & DAD on Google Cloud](https://usydnlp-conda-dtup
 
 ## References
 
+- [Detect All Abuse! Toward Universal Abusive Language Detection Models](https://github.com/usydnlp/MACAS)
 - [BERT for Joint Intent Classification and Slot Filling](https://arxiv.org/abs/1902.10909)
 - [CONDA: a CONtextual Dual-Annotated dataset for in-game toxicity understanding and detection](https://arxiv.org/abs/2106.06213)
 - [monologg/JointBERT](https://github.com/monologg/JointBERT)
