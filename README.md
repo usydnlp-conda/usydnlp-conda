@@ -60,14 +60,14 @@ $ python main.py --task {task_name} \
 		 --optim_metric {JSA, UCA, U-F1(I), T-F1, T-F1(T), etc}
 
 ### Examples
-### CONDA
+#### CONDA
 python main.py --task conda --model_type bert --model_dir final_conda_bert_dg_model --do_train --add_embed dg --optim_metric JSA
 
 python main.py --task conda --model_type bert --model_dir final_conda_bert_g_model --do_train --add_embed g --optim_metric JSA
 
 python main.py --task conda --model_type bert --model_dir final_conda_bert_E_model --do_train --add_embed E --optim_metric JSA
 
-### LOL
+#### LOL
 python main.py --task low --model_type bert --model_dir final_low_bert_dg_model --do_train --do_eval --add_embed dg --optim_metric JSA
 
 python main.py --task low --model_type distilbert --model_dir final_low_distilbert_e_model --do_train --do_eval --add_embed e --optim_metric U-F1(I)
