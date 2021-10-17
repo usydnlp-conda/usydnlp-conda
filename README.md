@@ -21,7 +21,7 @@ The Base Joint-BERT model used the (Unofficial) Pytorch implementation of `Joint
 ### The Base Joint-BERT Model Architecture
 
 <p float="left" align="center">
-    <img width="600" src="https://user-images.githubusercontent.com/28896432/68875755-b2f92900-0746-11ea-8819-401d60e4185f.png" />  
+    <img width="550" src="https://user-images.githubusercontent.com/28896432/68875755-b2f92900-0746-11ea-8819-401d60e4185f.png" />  
 </p>
 
 - Predict `intent` and `slot` at the same time from **one BERT model** (=Joint model)
