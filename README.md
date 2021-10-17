@@ -88,7 +88,7 @@ Heroku deployment: [MAE, BERT & DAD on Heroku](https://usydnlp-conda.herokuapp.c
 
 Gcloud deployment: [MAE, BERT & DAD on Google Cloud](https://usydnlp-conda-dtupb6paeq-ue.a.run.app/)
 
-This [sample data](https://github.com/usydnlp-conda/usydnlp-conda.github.io/blob/main/data/sample_data_for_demo.xlsx?raw=true) can be used to test the app.
+This [sample data](https://github.com/usydnlp-conda/usydnlp-conda.github.io/blob/main/data/sample_data_for_demo.xlsx?raw=true) can be used to test the above app.
 
 ## References
 
