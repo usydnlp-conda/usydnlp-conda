@@ -16,7 +16,7 @@ The multi-aspect embeddings were developed using the method outlined in [Detect 
 
 ## BERT
 
-The Joint-BERT model were developed using the (Unofficial) Pytorch implementation of `JointBERT`: [BERT for Joint Intent Classification and Slot Filling](https://arxiv.org/abs/1902.10909) as the base.
+The Joint-BERT model used the (Unofficial) Pytorch implementation of `JointBERT`: [BERT for Joint Intent Classification and Slot Filling](https://arxiv.org/abs/1902.10909) as the base.
 
 ### The Base Joint-BERT Model Architecture
 
@@ -69,6 +69,7 @@ $ python main.py --task {task_name} \
 
 ### Examples
 python main.py --task conda --model_type bert --model_dir final_conda_bert_dg_model --do_train --add_embed dg --optim_metric JSA  
+
 python main.py --task low --model_type bert --model_dir final_low_bert_dg_model --do_train --do_eval --add_embed dg --optim_metric JSA  
 
 ## Processing data
