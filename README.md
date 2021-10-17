@@ -11,7 +11,7 @@ Inspired by two of the most recent literatures in abusive language detection fro
 The Multi-Aspect Embeddings were developed using the method outlined in [Detect All Abuse! Toward Universal Abusive Language Detection Models](https://github.com/usydnlp/MACAS).
 
 <p align="center">
-  <img width="250" src="/static/MAE.png">
+  <img width="230" src="/static/MAE.png">
 </p>
 
 ## BERT
