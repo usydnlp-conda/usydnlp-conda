@@ -37,7 +37,7 @@ The CONDA and LOL dual-annotated datasets were developed using the method outlin
 
 ## Dependencies
 
-- python>=3.6
+- python==3.8.11
 - torch==1.8.1
 - transformers==3.0.2
 - seqeval==0.0.12
