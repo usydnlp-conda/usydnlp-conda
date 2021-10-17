@@ -1,6 +1,8 @@
 # MAE, BERT & DAD: Multi-Aspect Embeddings, Joint-BERT and Dual-Annotated Datasets for In-Game Toxicity Detection
 
-## Sony Jufri & the University of Sydney's NLP Group
+## Sony Jufri
+
+## the University of Sydney's NLP Group
 
 <b>Abstract:</b> In the past few years, the popularity of online multi-player gaming had grown rapidly. Unfortunately, with this phenomenon, came along the emergence of harmful behaviour in those communities. Many attempts had been done by gaming companies and Natural Language Processing (NLP) researchers to detect online abuse. These attempts ranged from the simple use of human reviewers to the more sophisticated machine learning and deep learning techniques. Nevertheless, studies showed that online abuse remained a big issue for many people to this day. Therefore, it is important that we remain vigilant and continue to improve our effort in detecting online abuse. 
 
