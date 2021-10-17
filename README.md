@@ -4,14 +4,14 @@
 
 <b>Abstract:</b> In the past few years, the popularity of online multi-player gaming had grown rapidly. Unfortunately, with this phenomenon, came along the emergence of harmful behaviour in those communities. Many attempts had been done by gaming companies and Natural Language Processing (NLP) researchers to detect online abuse. These attempts ranged from the simple use of human reviewers to the more sophisticated machine learning and deep learning techniques. Nevertheless, studies showed that online abuse remained a big issue for many people to this day. Therefore, it is important that we remain vigilant and continue to improve our effort in detecting online abuse. 
 
-Inspired by two of the most recent literatures in abusive language detection from the University of Sydney's NLP Group, we developed some deep learning models that could better detect toxic behaviour in online gaming. Using dual annotated datasets from two well-known games, Defense of the Ancients 2 (Dota 2) and League of Legends (LOL), a variety of multi-apsect embeddings and Joint-BERT models were developed and further improved to better detect toxic behaviour in online gaming.
+Inspired by two of the most recent literatures in abusive language detection from the University of Sydney's NLP Group, we developed some deep learning models that could better detect toxic behaviour in online gaming. Using dual annotated datasets from two well-known games, Defense of the Ancients 2 (Dota 2) and League of Legends (LOL), a variety of multi-apsect embeddings and Joint-BERT models were developed and further improved to help these models better detect toxic behaviour in online gaming. We hoped this study would benefit not only online gamers out there, but also other stakeholders in the gaming industry.
 
 ## MAE
 
 The Multi-Aspect Embeddings were developed using the method outlined in [Detect All Abuse! Toward Universal Abusive Language Detection Models](https://github.com/usydnlp/MACAS).
 
 <p align="center">
-  <img width="100" src="/static/MAE.png">
+  <img width="300" src="/static/MAE.png">
 </p>
 
 ## BERT
