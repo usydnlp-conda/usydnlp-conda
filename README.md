@@ -11,7 +11,7 @@ Inspired by two of the most recent literatures in abusive language detection fro
 The multi-aspect embeddings were developed using the method outlined in [Detect All Abuse! Toward Universal Abusive Language Detection Models](https://github.com/usydnlp/MACAS).
 
 <p align="left">
-  <img width="210" src="/static/MAE.png">
+  <img width="200" src="/static/MAE.png">
 </p>
 
 ## BERT
@@ -21,7 +21,7 @@ The Joint-BERT models used the (Unofficial) Pytorch implementation of `JointBERT
 ### The Base Joint-BERT Model Architecture
 
 <p float="left" align="left">
-    <img width="510" src="https://user-images.githubusercontent.com/28896432/68875755-b2f92900-0746-11ea-8819-401d60e4185f.png" />  
+    <img width="500" src="https://user-images.githubusercontent.com/28896432/68875755-b2f92900-0746-11ea-8819-401d60e4185f.png" />  
 </p>
 
 - Predict `intent` and `slot` at the same time from **one BERT model** (=Joint model)
