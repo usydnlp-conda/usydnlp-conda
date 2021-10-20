@@ -22,13 +22,13 @@
   </head>
   <body class="text-center">
     <form class="form-signin" method=post enctype=multipart/form-data>
-        <img src="/static/pytorch.png" alt="" width="55">
+        <img src="/static/pytorch.png" alt="" width="50">
         <h7></h7>
         <h5 style="line-height:1.5; font-weight:600">Detect toxic intent in your text</h5>
-        <img src="/static/theo1.png">
+        <img src="/static/theo1.png" style="margin-top:-5px; margin-bottom:-5px">
         <p></p>
         <h6 style="font-size:16px; font-weight:510; margin-bottom:5px">Select a model:</h6>
-        <select name="model" style="font-size:14px">
+        <select name="model" style="font-size:14px; width: 280px">
         <option value="final_conda_bert_dg_model">CONDA1: Joint-BERT + DG embeddings
         <option value="final_conda_bert_g_model">CONDA2: Joint-BERT + G embeddings
         <option value="final_conda_bert_e_model">CONDA3: Joint-BERT + E embeddings
@@ -36,8 +36,22 @@
         <option value="final_low_distilbert_e_model">LOL2: Joint-DistilBERT + E embeddings
         <option value="final_low_distilbert_de_model">LOL3: Joint-DistilBERT + DE embeddings
         </select>
-        <h5 style="font-weight:400; ; margin-top:12px">Enter your text below</h5>
-        <textarea type="text" name="sentence" maxlength="500" class="form-control-file" id="inputtext" rows="3", cols="100"></textarea>
+        <h6 style="font-size:16px; font-weight:510; margin-top:10px; margin-bottom:5px">Choose a sample text:</h6>
+        <select id="dropdown" style="font-size:14px; width: 280px">
+        <option value="">None</option>
+        <option value="GG my team is fucking stupid">GG my team is fucking stupid</option>
+        <option value="smurf means you are shit at your level">smurf means you are shit at your level</option>
+        <option value="kiss my ass and get lost!!">kiss my ass and get lost!!</option>
+        <option value="stfu and play try to win not to cry">stfu and play try to win not to cry</option>
+        <option value="0-5 too ez you had no chance hahaha">0-5 too ez you had no chance hahaha</option>
+        <option value="did you buy an account?">did you buy an account?</option>
+        <option value="ez game ez life">ez game ez life</option>
+        <option value="wait a sec, aa afk">wait a sec, aa afk</option>
+        <option value="pls report him for swearing">pls report him for swearing</option>
+        <option value="best game ever">best game ever</option>
+        </select>
+        <h6 style="font-size:16px; font-weight:510; margin-top:10px; margin-bottom:5px">OR enter your own text below</h6>
+        <textarea type="text" name="sentence" maxlength="500" class="form-control-file" id="inputtext" rows="3", cols="100" placeholder="Enter your text here"></textarea>
         <br/>
         <button class="btn btn-lg btn-primary btn-block" type="submit" id="submit">Submit</button>
         <p class="mt-5 mb-3 text-muted">Built using Pytorch, Flask and Love</p>
@@ -46,6 +60,13 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script type="text/javascript">
+        var mytextbox = document.getElementById('inputtext');
+        var mydropdown = document.getElementById('dropdown');
+    
+        mydropdown.onchange = function(){
+              mytextbox.value = this.value;
+             //mytextbox.innerHTML = this.value;
+        };
     $("#submit").click(function(){
        if($.trim($("#inputtext").val()) == ""){
           alert("Please enter your text!");
