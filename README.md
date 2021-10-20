@@ -34,7 +34,7 @@ The Joint-BERT models used the (Unofficial) Pytorch implementation of `JointBERT
 The CONDA and LOL dual-annotated datasets were developed using the method outlined in [CONDA: a CONtextual Dual-Annotated dataset for in-game toxicity understanding and detection](https://arxiv.org/abs/2106.06213) and provided by the University of Sydney's NLP Group. Below is an example of the intent/slot annotation.
 
 <p align="left">
-  <img width="500" src="/static/conda.png">
+  <img width="600" src="/static/conda.png">
 </p>
 
 ## Dependencies
