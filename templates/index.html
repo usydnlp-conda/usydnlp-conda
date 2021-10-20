@@ -37,7 +37,7 @@
         <option value="final_low_distilbert_de_model">LOL3: Joint-DistilBERT + DE embeddings
         </select>
         <h6 style="font-size:16px; font-weight:510; margin-top:10px; margin-bottom:5px">Choose a sample text:</h6>
-        <select id="dropdown" style="font-size:14px; width: 280px">
+        <select id="sampletext" style="font-size:14px; width: 280px">
         <option value="">None</option>
         <option value="GG my team is fucking stupid">GG my team is fucking stupid</option>
         <option value="smurf means you are shit at your level">smurf means you are shit at your level</option>
@@ -61,9 +61,9 @@
     <script src="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script type="text/javascript">
         var mytextbox = document.getElementById('inputtext');
-        var mydropdown = document.getElementById('dropdown');
+        var mysampletext = document.getElementById('sampletext');
     
-        mydropdown.onchange = function(){
+        mysampletext.onchange = function(){
               mytextbox.value = this.value;
              //mytextbox.innerHTML = this.value;
         };
