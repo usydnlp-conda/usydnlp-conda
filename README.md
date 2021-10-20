@@ -23,7 +23,7 @@ The Joint-BERT models used the (Unofficial) Pytorch implementation of `JointBERT
 ### The Base Joint-BERT Model Architecture
 
 <p float="left" align="left">
-    <img width="550" src="/static/j_bert_conda.png" />  
+    <img width="520" src="/static/j_bert_conda.png" />  
 </p>
 
 - Predict `intent` and `slot` at the same time from **one BERT model** (=Joint model)
