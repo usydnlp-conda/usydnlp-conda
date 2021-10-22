@@ -45,9 +45,9 @@ The CONDA and LOL dual-annotated datasets were developed using the method outlin
 - seqeval==0.0.12
 - pytorch-crf==0.7.2
 - torchvision==0.9.1
-- Flask==1.1.2
+- flask==1.1.2
 - numpy==1.20.3
-- Pillow==8.3.1
+- pillow==8.3.1
 - gunicorn==20.1.0
 
 ## Dataset
