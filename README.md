@@ -57,10 +57,6 @@ The CONDA and LOL dual-annotated datasets were developed using the method outlin
 | CONDA | 26,078 | 8,705 | 0     | 4             | 6           |
 | LOL   | 29,358 | 3,258 | 3,628 | 4             | 6           |
 
-- The number of labels are based on the _train_ dataset.
-- Add `UNK` for labels (For intent and slot labels which are only shown in _dev_ and _test_ dataset)
-- Add `PAD` for slot label
-
 ## Training & Evaluation
 $ python main.py --task {task_name} \
                  --model_type {model_type} \
