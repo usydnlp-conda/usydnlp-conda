@@ -95,5 +95,3 @@ Gcloud deployment: [MAE, BERT & DAD on Google Cloud](https://usydnlp-conda-dtupb
 - [avinassh/pytorch-flask-api-heroku](https://github.com/avinassh/pytorch-flask-api-heroku)
 - [Huggingface Transformers](https://github.com/huggingface/transformers)
 - [pytorch-crf](https://github.com/kmkurn/pytorch-crf)
-
-<b>Note:</b> the base code for the Joint-BERT models were sourced from the [monologg/JointBERT](https://github.com/monologg/JointBERT) GitHub page and the deployment codes were adopted from [avinassh/pytorch-flask-api-heroku](https://github.com/avinassh/pytorch-flask-api-heroku) GitHub website.
