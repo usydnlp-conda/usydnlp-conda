@@ -57,7 +57,7 @@ The CONDA and LOL dual-annotated datasets were developed using the method outlin
 | CONDA | 26,078 | 8,705 | 0     | 4             | 6           |
 | LOL   | 29,358 | 3,258 | 3,628 | 4             | 6           |
 
-The data was collected from two well-known games, Defense of the Ancients 2 (Dota 2) and League of Legends (LOL). From these two raw game data, the CONDA and LOL datasets were developed and provided by the University of Sydney’s NLP Group.
+The CONDA and LOL datasets were developed from two well-known games, Defense of the Ancients 2 (Dota 2) and League of Legends (LOL), and provided by the University of Sydney’s NLP Group.
 
 ## Training & Evaluation
 $ python main.py --task {task_name} \
