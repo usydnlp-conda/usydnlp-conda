@@ -8,7 +8,7 @@
 
 Inspired by two of the most recent literatures in abusive language detection from the University of Sydney's NLP Group, we developed deep learning models that could better detect toxic behaviour in online gaming. Using dual annotated datasets from two well-known games, Defense of the Ancients 2 (Dota 2) and League of Legends (LOL), a variety of multi-apsect embeddings and Joint-BERT models were used to better detect toxic behaviour in online gaming. We hoped this would benefit not only online gamers, but also other stakeholders in the gaming industry.
 
-## MAE
+## MAE (Multi-Aspect Embeddings)
 
 The multi-aspect embeddings were developed using the method outlined in [Detect All Abuse! Toward Universal Abusive Language Detection Models](https://github.com/usydnlp/MACAS).
 
@@ -16,7 +16,7 @@ The multi-aspect embeddings were developed using the method outlined in [Detect 
   <img width="450" src="/static/MAE.png">
 </p>
 
-## BERT
+## BERT (Bidirectional Encoder Representations from Transformers)
 
 The Joint-BERT models used the (Unofficial) Pytorch implementation of `JointBERT`: [BERT for Joint Intent Classification and Slot Filling](https://arxiv.org/abs/1902.10909) as the base.
 
@@ -27,11 +27,16 @@ The Joint-BERT models used the (Unofficial) Pytorch implementation of `JointBERT
 </p>
 
 - Predict `intent` and `slot` at the same time from **one BERT model** (=Joint model)
-- total_loss = intent_loss + coef \* slot_loss (Change coef with `--slot_loss_coef` option)
+- total_loss = intent_loss + coef \* slot_loss
 
-## DAD
+## DAD (Dual-Annotated Datasets)
 
-The CONDA and LOL dual-annotated datasets were developed using the method outlined in [CONDA: a CONtextual Dual-Annotated dataset for in-game toxicity understanding and detection](https://arxiv.org/abs/2106.06213) and provided by the University of Sydney's NLP Group. Below is an example of the intent/slot annotation.
+|       | Train  | Dev   | Test  | Intent Labels | Slot Labels |
+| ----- | ------ | ----- | ----- | ------------- | ----------- |
+| CONDA | 26,078 | 8,705 | 0     | 4             | 6           |
+| LOL   | 29,358 | 3,258 | 3,628 | 4             | 6           |
+
+The CONDA and LOL datasets were collected from two well-known games, Defense of the Ancients 2 (Dota 2) and League of Legends (LOL). They were developed using the method outlined in [CONDA: a CONtextual Dual-Annotated dataset for in-game toxicity understanding and detection](https://arxiv.org/abs/2106.06213) and provided by the University of Sydney’s NLP Group. Below is an example of the intent/slot annotation.
 
 <p align="left">
   <img width="550" src="/static/conda_annot.png">
@@ -49,15 +54,6 @@ The CONDA and LOL dual-annotated datasets were developed using the method outlin
 - numpy==1.20.3
 - pillow==8.3.1
 - gunicorn==20.1.0
-
-## Dataset
-
-|       | Train  | Dev   | Test  | Intent Labels | Slot Labels |
-| ----- | ------ | ----- | ----- | ------------- | ----------- |
-| CONDA | 26,078 | 8,705 | 0     | 4             | 6           |
-| LOL   | 29,358 | 3,258 | 3,628 | 4             | 6           |
-
-The CONDA and LOL datasets were developed from two well-known games, Defense of the Ancients 2 (Dota 2) and League of Legends (LOL), and provided by the University of Sydney’s NLP Group.
 
 ## Training & Evaluation
 $ python main.py --task {task_name} \
