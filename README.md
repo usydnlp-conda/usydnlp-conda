@@ -16,7 +16,7 @@ The multi-aspect embeddings were developed using the method outlined in [Detect 
   <img width="450" src="/static/MAE.png">
 </p>
 
-## BERT (Bidirectional Encoder Representations from Transformers)
+## BERT (the Joint-BERT)
 
 The Joint-BERT models used the (Unofficial) Pytorch implementation of `JointBERT`: [BERT for Joint Intent Classification and Slot Filling](https://arxiv.org/abs/1902.10909) as the base.
 
