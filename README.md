@@ -38,7 +38,7 @@ The Joint-BERT models used the (Unofficial) Pytorch implementation of `JointBERT
 
 The CONDA and LOL datasets were developed from two well-known games, Defense of the Ancients 2 (Dota 2) and League of Legends (LOL), using the method outlined in [CONDA: a CONtextual Dual-Annotated dataset for in-game toxicity understanding and detection](https://arxiv.org/abs/2106.06213) and provided by the University of Sydney’s NLP Group.  
 
-Below is an example of the Intent and Slot annotations in the datasets.
+Below is an example of the Intent and Slot annotations.
 
 <p align="left">
   <img width="550" src="/static/conda_annot.png">
