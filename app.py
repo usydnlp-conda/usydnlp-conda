@@ -2,6 +2,11 @@ import os
 
 from flask import Flask, render_template, request, redirect
 
+#from inference import get_prediction
+#from commons import format_class_name
+#import predict
+
+#import os
 import logging
 #import argparse
 from tqdm import tqdm #, trange
@@ -361,7 +366,7 @@ def predict(sent,model_name):
             if pred == 'O':
                 line = line + word + " "
             else:
-                line = line + "[{}:{}] ".format(word, pred)
+                line = line + "[{}: {}] ".format(word, pred)
         if intent_label_lst[intent_pred]=='E':
             final_intent_pred = 'Toxic (Explicit)'
         elif intent_label_lst[intent_pred]=='I':
