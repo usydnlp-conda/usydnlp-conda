@@ -41,7 +41,7 @@ The CONDA and LOL datasets were developed from two well-known games, Defense of 
 Below is an example of the Intent and Slot annotations.
 
 <p align="left">
-  <img width="550" src="/static/conda_annot.png">
+  <img width="550" src="/static/conda_annot2.png">
 </p>
 
 ## Dependencies
