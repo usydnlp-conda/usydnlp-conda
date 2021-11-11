@@ -1,4 +1,4 @@
-# MAE, BERT & DAD: Multi-Aspect Embeddings, Joint-BERT and Dual-Annotated Datasets for In-Game Toxicity Detection
+# MAM, BERT & DAD: Multi-Aspect Modelling, Joint-BERT and Dual-Annotated Datasets for In-Game Toxicity Detection
 
 ## Sony Jufri
 
@@ -8,7 +8,7 @@
 
 Inspired by two of the most recent literatures in abusive language detection from the University of Sydney's NLP Group, we developed deep learning models that could better detect toxic behaviour in online gaming. Using dual annotated datasets from two well-known games, Defense of the Ancients 2 (Dota 2) and League of Legends (LOL), a variety of multi-apsect embeddings and Joint-BERT models were used to better detect toxic behaviour in online gaming. We hoped this would benefit not only online gamers, but also other stakeholders in the gaming industry.
 
-## MAE (Multi-Aspect Embeddings)
+## MAM (Multi-Aspect Modelling)
 
 The multi-aspect embeddings were developed using the method outlined in [Detect All Abuse! Toward Universal Abusive Language Detection Models](https://github.com/usydnlp/MACAS).
 
