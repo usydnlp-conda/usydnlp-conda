@@ -10,7 +10,7 @@ Inspired by two of the most recent literatures in abusive language detection fro
 
 ## MAM (Multi-Aspect Modelling)
 
-The multi-aspect embeddings were developed using the method outlined in [Detect All Abuse! Toward Universal Abusive Language Detection Models](https://github.com/usydnlp/MACAS).
+The multi-aspect embeddings in the modelling were developed using the method outlined in [Detect All Abuse! Toward Universal Abusive Language Detection Models](https://github.com/usydnlp/MACAS).
 
 <p align="left">
   <img width="450" src="/static/MAE.png">
